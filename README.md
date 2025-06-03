@@ -50,6 +50,21 @@ int[] espera = gestor.contarPacientesPorPrioridad();
 System.out.println("Pacientes en espera: Alta=" + espera[0] + ", Media=" + espera[1] + ", Baja=" + espera[2]);
 
 
+##Incidencias registradas
+
+###Problema
+
+No se validaba prioridad fuera de rango (1-3)	
+
+Eliminación dejaba lista inconsistente	
+
+###Solución Aplicada
+
+Se añadió validación en constructor de Paciente
+
+Se corrigió el método eliminarTurno()
+
+
 ##Ejecución de Pruebas
 
 Las pruebas unitarias verifican:
